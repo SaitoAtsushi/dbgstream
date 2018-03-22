@@ -69,6 +69,7 @@ public:
 
   ~basic_debug_stream(void) {
     this->flush();
+    delete this->rdbuf();
   }
 };
 
