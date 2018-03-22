@@ -26,7 +26,7 @@ all: $(TARGET)
 $(TARGET) : $(OBJS)
 	ar ru $@ $(OBJS)
 
-%.o: %.c dbgstream.h
+%.o: %.cpp dbgstream.h
 	$(CXX) -c $(CFLAGS) $< -o $@
 
 install:
